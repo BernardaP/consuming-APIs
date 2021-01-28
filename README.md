@@ -8,7 +8,7 @@ This lab will help prepare you for the upcoming project. It is due on our typica
 
 - Create a HTML/CSS/JS file structure and connect the files in the HTML.
 
-- Modify the `index.html` file to display a `Get Chuck Norris Joke` submit button within a form (the form needs no inputs).
+- Modify the `index.html` file to display a `Get Chuck Norris Joke` button within a form (the form needs no inputs).
 
 - When the `Get Chuck Norris Joke` button is clicked, the fetch request will be submitted to the API's server at the following endpoint at [CHUCKNORRIS.IO](https://api.chucknorris.io/):<br>`https://api.chucknorris.io/jokes/random`. 
 
