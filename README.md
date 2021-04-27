@@ -1,18 +1,15 @@
-<img src="https://i.imgur.com/294n16z.png">
+### Chuckle with Chuck
 
-# Consume a 3rd Party API Lab
-
-This lab will help prepare you for the upcoming project. It is due on our typical due date but we suggest prioritizing this lab as it should provide a basic structure that you can build from during next week's project. Have fun with it!
+This app main purpose is to practice consuming a 3rd party API while meeting the following requirements.
 
 ## Requirements
 
 - Create a HTML/CSS/JS file structure and connect the files in the HTML.
 
-- Modify the `index.html` file to display a `Get Chuck Norris Joke` button within a form (the form needs no inputs).
+- The `index.html` file should display a `Get Chuck Norris Joke` button within a form (the form needs no inputs).
 
 - When the `Get Chuck Norris Joke` button is clicked, the fetch request will be submitted to the API's server at the following endpoint at [CHUCKNORRIS.IO](https://api.chucknorris.io/):<br>`https://api.chucknorris.io/jokes/random`. 
 
-- This lab is a deliverable.
 
 ## Steps
 
@@ -27,12 +24,10 @@ This lab will help prepare you for the upcoming project. It is due on our typica
 ## Bonus
 
 - Implement the choice of category of the joke!
+  The list of categories is available at this endpoint:<br>`https://api.chucknorris.io/jokes/categories`
 
 OR
 
 - Style up the HTML page with your own choice of color and font. The layout should be centered on the page and if you want to toss a funny Chuck Norris gif in there for good measure, please do!
 
-## Hints
 
-- The list of categories is available at this endpoint:<br>`https://api.chucknorris.io/jokes/categories`
-- Use flexbox and/or grid to create your layout
