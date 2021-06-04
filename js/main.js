@@ -1,31 +1,34 @@
-console.log("All good here")
-
+// console.log("All good here")
 
 
 const getButton = document.querySelector('button')
 // console.log(getButton)
 const jokeBody = document.createElement('p')
-document.body.appendChild(jokeBody)
+let showJoke = document.querySelector('#displayJoke')
+showJoke.appendChild(jokeBody)
 
 const animalButton = document.getElementById('animal')
-
 const careerButton = document.getElementById('career')
 
+const requestURL = 'https://api.chucknorris.io/jokes/random';
 
 
 const callApi = () => {
   // console.log("click")
   
 
-  fetch('https://api.chucknorris.io/jokes/random')
+  fetch(requestURL)
   .then(function(apiData){
     return apiData.json()
   })
   .then(function(jsonData){
-    console.log(jsonData)
+    // console.log(jsonData)
     const joke = jsonData.value
-    console.log(joke)
+    // console.log(joke)
     jokeBody.innerHTML = joke
+  })
+  .catch((error) => {
+    console.error("ERROR: ", error)
   })
 }
 
@@ -49,8 +52,8 @@ animalButton.addEventListener('click', (e) => {
   e.preventDefault(); 
   apiCategory(animalButton.value)
   // console.log(animalButton.value)
-  })
+})
 careerButton.addEventListener('click', (e) => {
   e.preventDefault(); 
   apiCategory(careerButton.value)
-  })
+})

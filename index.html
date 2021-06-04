@@ -3,18 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Consuming a 3rd Party API</title>
   <link rel="stylesheet" href="./css/style.css">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Raleway:wght@300&display=swap" rel="stylesheet"></head>
 </head>
 <body>
-  <h1>API</h1>
-
-  <form onsubmit="return false">
-    <button type="button" id="btn">Get Chuck Norris Joke</button>
-    <button value="animal" id="animal">Animal</button>
-    <button value="career" id="career">Career</button>
-  </form>
+  <div class="main-frame">
+    <div class="banner">
+      <h1>Chuckle with Chuck</h1>
+      <img src="./img/chuck-kicking.gif" alt="">
+    </div>
+    <div class="chuck-button">
+      
+      <form onsubmit="return false">
+        <h3>Get Chuck Norris Joke</h3>
+        <button type="button" id="btn">Random</button>
+        <button value="animal" id="animal">Animal</button>
+        <button value="career" id="career">Career</button>
+      </form>
+    </div>
+    <div id="displayJoke"></div>
+  </div>
 
 
   <script src="./js/main.js"></script>
